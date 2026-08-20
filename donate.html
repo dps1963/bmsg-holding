@@ -14,7 +14,7 @@
         --ogd:#1e2f6e;--ofr:#6b4fa1;--ltr:#2f6e4e;
         --display:'Fraunces',serif;--body:'Albert Sans',sans-serif}
   *{box-sizing:border-box;margin:0}
-  body{font-family:var(--body);color:var(--ink);background:var(--cream);line-height:1.65;min-height:100vh;
+  body{font-family:var(--body);color:var(--ink);background:transparent;line-height:1.65;min-height:100vh;
        display:flex;flex-direction:column;align-items:center;padding:0 22px 40px}
   header{padding:26px 0 6px;text-align:center}
   .logo{display:inline-flex;flex-direction:column;align-items:center;text-decoration:none}
@@ -41,9 +41,27 @@
   .family a.o{color:var(--ogd)} .family a.f{color:var(--ofr)} .family a.l{color:var(--ltr)}
   footer{margin-top:38px;color:var(--muted);font-size:.85rem;text-align:center}
   footer a{color:var(--sun-deep);text-decoration:none;font-weight:600}
+
+/* --- warm backdrop video (front-page hero, breathing loop) --- */
+.backdrop{position:fixed;inset:0;z-index:-1;overflow:hidden}
+.backdrop video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.backdrop .veil{position:absolute;inset:0;background:
+  linear-gradient(180deg, rgba(253,248,239,.95) 0%, rgba(253,248,239,.88) 38%, rgba(253,248,239,.66) 100%),
+  linear-gradient(115deg, rgba(244,168,54,.10), transparent 55%)}
+@media (prefers-reduced-motion: reduce){.backdrop video{display:none}
+  .backdrop{background:url(images/hero-1.jpg) center/cover no-repeat}}
+.way{background:rgba(255,255,255,.92);backdrop-filter:blur(2px)}
+.honest{background:rgba(255,255,255,.92)}
+footer{color:#4a5049}
 </style>
 </head>
 <body>
+<div class="backdrop" aria-hidden="true">
+  <video autoplay muted loop playsinline preload="metadata" poster="images/hero-1.jpg">
+    <source src="images/donate-warmth.mp4" type="video/mp4">
+  </video>
+  <div class="veil"></div>
+</div>
 <header>
   <a class="logo" href="index.html">
     <b>BringMeSunshine<small>Group.com</small></b>
