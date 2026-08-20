@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>Support the sunshine — BringMeSunshineGroup.com</title>
+<meta name="description" content="Support BringMeSunshineGroup.com — personal gifts keep OneGoodDeed free for everyone and help build OurFamilyRocks and LearnToReadReadToLearn.">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600&family=Albert+Sans:wght@400;500;600;700&family=Caveat:wght@500;600&display=swap" rel="stylesheet">
+<style>
+  :root{--sun:#f4a836;--sun-deep:#d97e1f;--sky:#1c2a44;--cream:#fdf8ef;--ink:#232a26;--muted:#5a615c;
+        --ogd:#1e2f6e;--ofr:#6b4fa1;--ltr:#2f6e4e;
+        --display:'Fraunces',serif;--body:'Albert Sans',sans-serif}
+  *{box-sizing:border-box;margin:0}
+  body{font-family:var(--body);color:var(--ink);background:var(--cream);line-height:1.65;min-height:100vh;
+       display:flex;flex-direction:column;align-items:center;padding:0 22px 40px}
+  header{padding:26px 0 6px;text-align:center}
+  .logo{display:inline-flex;flex-direction:column;align-items:center;text-decoration:none}
+  .logo b{font-family:var(--display);font-weight:600;font-size:1.5rem;color:var(--sky);line-height:1.1}
+  .logo b small{color:var(--sun-deep);font-size:.72em}
+  .kind-tag{font-family:'Caveat',cursive;font-size:1.15rem;font-weight:600;color:var(--sun-deep);margin-top:2px}
+  main{max-width:660px;text-align:center;display:flex;flex-direction:column;align-items:center;gap:18px;margin:auto 0}
+  h1{font-family:var(--display);font-weight:600;font-size:clamp(1.9rem,6vw,2.7rem);color:var(--sky);text-wrap:balance;margin-top:14px}
+  h1 em{font-style:italic;color:var(--sun-deep)}
+  p.lead{color:var(--muted);max-width:52ch;font-size:1.06rem}
+  .ways{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:14px;width:100%;margin-top:8px}
+  .way{background:#fff;border:1px solid #eee3cf;border-radius:16px;padding:20px 16px;display:flex;flex-direction:column;gap:8px;align-items:center;box-shadow:0 4px 18px rgba(35,42,38,.06)}
+  .way h2{font-family:var(--display);font-weight:600;font-size:1.08rem;color:var(--sky)}
+  .way p{font-size:.88rem;color:var(--muted)}
+  .btn{display:inline-block;border:none;border-radius:12px;padding:11px 22px;font:inherit;font-weight:700;
+       background:var(--sun);color:#3a2508;text-decoration:none;cursor:pointer;margin-top:auto}
+  .btn:hover{background:#ffc35c}
+  .btn[aria-disabled="true"]{background:#e8dcc4;color:#8a8272;cursor:default;pointer-events:none}
+  .pending{font-size:.78rem;color:var(--sun-deep);font-weight:600;letter-spacing:.02em}
+  .honest{background:#fff;border-left:5px solid var(--sun);border-radius:0 12px 12px 0;padding:12px 16px;
+          text-align:left;font-size:.88rem;color:var(--muted);max-width:600px}
+  .family{display:flex;gap:14px;flex-wrap:wrap;justify-content:center;font-size:.9rem;margin-top:6px}
+  .family a{text-decoration:none;font-weight:600}
+  .family a.o{color:var(--ogd)} .family a.f{color:var(--ofr)} .family a.l{color:var(--ltr)}
+  footer{margin-top:38px;color:var(--muted);font-size:.85rem;text-align:center}
+  footer a{color:var(--sun-deep);text-decoration:none;font-weight:600}
+</style>
+</head>
+<body>
+<header>
+  <a class="logo" href="index.html">
+    <b>BringMeSunshine<small>Group.com</small></b>
+    <span id="kindTag" class="kind-tag">always be kind</span>
+  </a>
+</header>
+<main>
+  <h1>Support the <em>sunshine</em>.</h1>
+  <p class="lead">Everything in the family — OneGoodDeed's free world of kindness, OurFamilyRocks and
+  LearnToReadReadToLearn — is built and run on personal effort and personal gifts. If you'd like to help
+  keep it free and growing, a gift of any size genuinely helps: servers, safety tools, and time.</p>
+
+  <div class="ways">
+    <div class="way">
+      <h2>One-off gift</h2>
+      <p>Give once, any amount. Card, Apple&nbsp;Pay or Google&nbsp;Pay — handled securely by Stripe.</p>
+      <a class="btn" id="giveOnce" href="#" aria-disabled="true">Give a gift</a>
+      <span class="pending" id="pendingNote">Online giving opens shortly — Stripe setup in progress</span>
+    </div>
+    <div class="way">
+      <h2>Monthly sunshine</h2>
+      <p>A small monthly gift that quietly keeps the lights on.</p>
+      <a class="btn" id="giveMonthly" href="#" aria-disabled="true">Give monthly</a>
+      <span class="pending">Opens with Stripe setup</span>
+    </div>
+    <div class="way">
+      <h2>Another way?</h2>
+      <p>Want to help differently — skills, ideas, introductions?</p>
+      <a class="btn" href="index.html#connect">Get in touch</a>
+    </div>
+  </div>
+
+  <div class="honest"><b>The honest bit:</b> BringMeSunshineGroup.com is run personally by its founder as a
+  sole trader, not (yet) a registered charity. A gift here is personal support for the group's work — it is
+  not a tax-deductible charitable donation, and it may be treated as income under New Zealand tax rules.
+  Every dollar goes into building and running the platforms.</div>
+
+  <div class="family">
+    Your gift supports:&nbsp;
+    <a class="o" href="https://onegooddeed.com">OneGoodDeed.com</a>
+    <a class="f" href="https://ourfamilyrocks.com">OurFamilyRocks.com</a>
+    <a class="l" href="https://learntoreadreadtolearn.com">LearnToReadReadToLearn.com</a>
+  </div>
+</main>
+<footer>© 2026 BringMeSunshineGroup.com · <a href="index.html">home</a> · <a href="privacy.html">privacy</a> · <a href="terms.html">terms</a></footer>
+<script>
+// Stripe Payment Links land here the day they exist (Dave pastes the buy.stripe.com URLs; buttons go live).
+var STRIPE_LINK_ONCE = "";     // e.g. https://buy.stripe.com/xxxx
+var STRIPE_LINK_MONTHLY = "";  // e.g. https://buy.stripe.com/yyyy
+(function(){
+  function arm(id, url){ var a=document.getElementById(id); if(a && url){ a.href=url; a.removeAttribute("aria-disabled"); } }
+  arm("giveOnce", STRIPE_LINK_ONCE); arm("giveMonthly", STRIPE_LINK_MONTHLY);
+  if(STRIPE_LINK_ONCE){ var n=document.getElementById("pendingNote"); if(n) n.remove(); }
+})();
+</script>
+<script>
+(function(){
+  var K={en:"always be kind",mi:"kia atawhai tonu",fr:"soyez toujours bienveillant",es:"sé siempre amable",de:"sei immer freundlich",it:"sii sempre gentile",pt:"seja sempre gentil",nl:"wees altijd vriendelijk",sv:"var alltid snäll",nb:"vær alltid snill",no:"vær alltid snill",da:"vær altid venlig",fi:"ole aina ystävällinen",pl:"bądź zawsze życzliwy",cs:"buď vždy laskavý",ro:"fii mereu bun",hu:"légy mindig kedves",el:"να είσαι πάντα ευγενικός",tr:"her zaman nazik ol",ru:"всегда будь добрым",uk:"завжди будь добрим",ar:"كن لطيفًا دائمًا",he:"היו תמיד אדיבים",hi:"हमेशा दयालु बनें",th:"มีเมตตาเสมอ",vi:"luôn tử tế",id:"selalu berbaik hati",ms:"sentiasa berbaik hati",fil:"laging maging mabait",tl:"laging maging mabait",ja:"いつも親切に",ko:"항상 친절하게",zh:"常怀善意",zhh:"常懷善意",sm:"ia agalelei pea"};
+  var RTL={ar:1,he:1};
+  function pick(langs){for(var i=0;i<langs.length;i++){var l=String(langs[i]).toLowerCase();if(l.indexOf("zh")===0){return {t:(/tw|hk|mo|hant/.test(l)?K.zhh:K.zh),l:l,r:0};}var p=l.split("-")[0];if(K[p])return {t:K[p],l:p,r:RTL[p]||0};}return {t:K.en,l:"en",r:0};}
+  var el=document.getElementById("kindTag"); if(!el) return;
+  var m=pick(navigator.languages||[navigator.language||"en"]);
+  el.textContent=m.t; el.setAttribute("lang",m.l); el.setAttribute("dir",m.r?"rtl":"ltr");
+})();
+</script>
+</body>
+</html>
