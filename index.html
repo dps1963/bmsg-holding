@@ -201,6 +201,8 @@ footer a:first-child{margin-left:0}
 .contact-card button{width:100%;border:none;cursor:pointer;font:inherit;font-weight:700;border-radius:12px;padding:12px}
 .contact-card .cf-note{font-size:.8rem;color:var(--muted);margin:10px 0 0;text-align:center}
 .contact-card .cf-note a{color:var(--sun-deep);font-weight:600}
+.lockup{display:flex;flex-direction:column}
+.kind-tag{text-transform:uppercase;letter-spacing:.24em;font-size:.6rem;font-weight:700;color:var(--sun);text-shadow:0 1px 6px rgba(0,0,0,.5);margin-top:2px}
 </style>
 </head>
 <body>
@@ -216,7 +218,7 @@ footer a:first-child{margin-left:0}
         <line x1="39" y1="9" x2="34.5" y2="13.5"/><line x1="9" y1="39" x2="13.5" y2="34.5"/>
       </g>
     </svg>
-    <b>BringMeSunshine<small>Group.com</small></b>
+    <span class="lockup"><b>BringMeSunshine<small>Group.com</small></b><span id="kindTag" class="kind-tag">always be kind</span></span>
   </a>
   <nav aria-label="Primary">
     <a href="#mission">Our mission</a>
@@ -406,6 +408,42 @@ document.querySelectorAll('img[data-srcs]').forEach(function(img){
     var b=f.querySelector('button'); b.textContent='Opening your email app…';
     setTimeout(function(){b.textContent='Send message';},4000);
   });
+})();
+</script>
+
+<script>
+(function(){
+  var K={en:"always be kind",mi:"kia atawhai tonu",fr:"soyez toujours bienveillant",es:"s\u00e9 siempre amable",
+  de:"sei immer freundlich",it:"sii sempre gentile",pt:"seja sempre gentil",nl:"wees altijd vriendelijk",
+  sv:"var alltid sn\u00e4ll",nb:"v\u00e6r alltid snill",no:"v\u00e6r alltid snill",da:"v\u00e6r altid venlig",
+  fi:"ole aina yst\u00e4v\u00e4llinen",pl:"b\u0105d\u017a zawsze \u017cyczliwy",cs:"bu\u010f v\u017edy laskav\u00fd",
+  ro:"fii mereu bun",hu:"l\u00e9gy mindig kedves",el:"\u03bd\u03b1 \u03b5\u03af\u03c3\u03b1\u03b9 \u03c0\u03ac\u03bd\u03c4\u03b1 \u03b5\u03c5\u03b3\u03b5\u03bd\u03b9\u03ba\u03cc\u03c2",
+  tr:"her zaman nazik ol",ru:"\u0432\u0441\u0435\u0433\u0434\u0430 \u0431\u0443\u0434\u044c \u0434\u043e\u0431\u0440\u044b\u043c",
+  uk:"\u0437\u0430\u0432\u0436\u0434\u0438 \u0431\u0443\u0434\u044c \u0434\u043e\u0431\u0440\u0438\u043c",
+  ar:"\u0643\u0646 \u0644\u0637\u064a\u0641\u064b\u0627 \u062f\u0627\u0626\u0645\u064b\u0627",
+  he:"\u05d4\u05d9\u05d5 \u05ea\u05de\u05d9\u05d3 \u05d0\u05d3\u05d9\u05d1\u05d9\u05dd",
+  hi:"\u0939\u092e\u0947\u0936\u093e \u0926\u092f\u093e\u0932\u0941 \u092c\u0928\u0947\u0902",
+  th:"\u0e21\u0e35\u0e40\u0e21\u0e15\u0e15\u0e32\u0e40\u0e2a\u0e21\u0e2d",vi:"lu\u00f4n t\u1eed t\u1ebf",
+  id:"selalu berbaik hati",ms:"sentiasa berbaik hati",fil:"laging maging mabait",tl:"laging maging mabait",
+  ja:"\u3044\u3064\u3082\u89aa\u5207\u306b",ko:"\ud56d\uc0c1 \uce5c\uc808\ud558\uac8c",
+  zh:"\u5e38\u6000\u5584\u610f",zhh:"\u5e38\u61f7\u5584\u610f",sm:"ia agalelei pea"};
+  var RTL={ar:1,he:1};
+  function pick(langs){
+    for(var i=0;i<langs.length;i++){
+      var l=String(langs[i]).toLowerCase();
+      if(l.indexOf("zh")===0){return {t:(/tw|hk|mo|hant/.test(l)?K.zhh:K.zh),l:l,r:0};}
+      var p=l.split("-")[0];
+      if(K[p]) return {t:K[p],l:p,r:RTL[p]||0};
+    }
+    return {t:K.en,l:"en",r:0};
+  }
+  function apply(langs){
+    var el=document.getElementById("kindTag"); if(!el) return;
+    var m=pick(langs||navigator.languages||[navigator.language||"en"]);
+    el.textContent=m.t; el.setAttribute("lang",m.l); el.setAttribute("dir",m.r?"rtl":"ltr");
+  }
+  window.__kindTag={set:apply};
+  apply();
 })();
 </script>
 </body>
