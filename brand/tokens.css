@@ -1,0 +1,240 @@
+/* ============================================================================
+   BringMeSunshine Group — brand tokens
+   Extracted verbatim from the live site mirror (index.html inline stylesheet).
+   Include this ONE file to reproduce the BMSG look on any webpage or app.
+   Source of truth: ../index.html  ·  Do not edit values without re-checking
+   against the site source.
+   ========================================================================== */
+
+/* The exact Google Fonts load the site uses (Fraunces display + Albert Sans body) */
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600&family=Albert+Sans:wght@400;500;600;700&display=swap');
+
+:root {
+  /* ---------------------------------------------------------------- colours
+     Core palette — the site's actual :root variables */
+  --bmsg-sun:        #f4a836;  /* primary sunshine orange (logo, CTAs) */
+  --bmsg-sun-deep:   #d97e1f;  /* deeper sun — defined on site, reserved shade */
+  --bmsg-sky:        #1c2a44;  /* deep dawn navy — hero/banner bg, theme-color */
+  --bmsg-cream:      #fdf8ef;  /* page background */
+  --bmsg-ink:        #232a26;  /* body text */
+  --bmsg-muted:      #5a615c;  /* secondary text */
+
+  /* Product-family accents (drawn from the three child brands) */
+  --bmsg-ogd-navy:   #1e2f6e;  /* OneGoodDeed */
+  --bmsg-ofr-purple: #6b4fa1;  /* OurFamilyRocks */
+  --bmsg-ltr-green:  #2f6e4e;  /* LearnToRead·ReadToLearn */
+
+  /* Recurring hardcoded colours from the site stylesheet */
+  --bmsg-gold:       #ffd98c;  /* highlight gold — eyebrow, link hover, focus rings, footer links */
+  --bmsg-gold-em:    #ffcf6e;  /* italic <em> emphasis in the H1 */
+  --bmsg-sun-hover:  #ffc25e;  /* CTA hover fill */
+  --bmsg-cta-ink:    #3a2508;  /* dark-brown text on sun-coloured CTAs */
+  --bmsg-white:      #ffffff;
+  --bmsg-footer-bg:  #182233;  /* footer background */
+  --bmsg-footer-ink: #c8cedd;  /* footer body text */
+  --bmsg-scrim:      #0e1422;  /* rgba(14,20,34,…) — hero/photo scrims & caption gradients */
+  --bmsg-banner-scrim: rgba(16, 24, 40, .68);  /* CTA-banner overlay */
+  --bmsg-shadow-tint: 35, 42, 38;              /* rgb triplet behind all box-shadows (ink-toned) */
+
+  /* Sunrise / fallback gradient stops (hero-fallback, photo placeholders) */
+  --bmsg-dawn-pink:   #d3628a;
+  --bmsg-dusk-purple: #4a2f58;
+  --bmsg-amber-deep:  #b8652f;
+  --bmsg-amber-warm:  #c97b3a;
+  --bmsg-ogd-navy-lt: #3b4f9e;  /* OGD card-photo fallback gradient light stop */
+  --bmsg-ofr-purple-lt:#9a7ecf; /* OFR card-photo fallback gradient light stop */
+  --bmsg-ltr-green-lt:#58a37c;  /* LTR card-photo fallback gradient light stop */
+
+  /* Signature gradients, ready-made */
+  --bmsg-grad-sunrise: radial-gradient(circle at 50% 78%, #ffd98c 0%, #f4a836 18%, #d3628a 45%, #4a2f58 75%, #1c2a44 100%);
+  --bmsg-grad-sunball: radial-gradient(circle at 60% 30%, #ffd98c, #f4a836 40%, #b8652f 100%);
+  --bmsg-grad-caption: linear-gradient(to top, rgba(14,20,34,.85), transparent);
+
+  /* -------------------------------------------------------------- typography */
+  --bmsg-font-display: 'Fraunces', serif;        /* headings, logo wordmark — wght 400 & 600 */
+  --bmsg-font-body:    'Albert Sans', sans-serif; /* everything else — wght 400/500/600/700 */
+
+  /* Type scale (site's actual clamp() values) */
+  --bmsg-fs-h1:     clamp(2.5rem, 6vw, 4.5rem);      /* Fraunces 400, lh 1.05, ls -.01em */
+  --bmsg-fs-h2:     clamp(1.8rem, 3.4vw, 2.6rem);    /* Fraunces 600, lh 1.12 */
+  --bmsg-fs-h3:     1.35rem;                          /* Fraunces 600 (card titles) */
+  --bmsg-fs-lede:   1.1rem;
+  --bmsg-fs-hero-p: clamp(1.02rem, 1.4vw, 1.2rem);
+  --bmsg-fs-body:   1rem;
+  --bmsg-fs-nav:    .95rem;                           /* weight 600 */
+  --bmsg-fs-small:  .88rem;                           /* footer */
+  --bmsg-fs-eyebrow:.78rem;                           /* 700, uppercase, ls .24em */
+  --bmsg-lh-body:   1.65;
+  --bmsg-ls-eyebrow:.24em;
+
+  /* ------------------------------------------------------------------ radii */
+  --bmsg-radius-pill:  999px;  /* buttons, badges, nav CTA */
+  --bmsg-radius-photo: 20px;   /* large feature photo */
+  --bmsg-radius-card:  18px;   /* product cards */
+  --bmsg-radius-tile:  16px;   /* people-strip tiles */
+
+  /* ---------------------------------------------------------------- shadows */
+  --bmsg-shadow-card:  0 12px 34px rgba(35,42,38,.12);
+  --bmsg-shadow-photo: 0 22px 50px rgba(35,42,38,.22);
+  --bmsg-shadow-tile:  0 10px 26px rgba(35,42,38,.14);
+  --bmsg-textshadow-hero: 0 2px 18px rgba(0,0,0,.55);
+  --bmsg-textshadow-onphoto: 0 1px 8px rgba(0,0,0,.45);
+
+  /* ---------------------------------------------------------------- spacing */
+  --bmsg-pad-x:        clamp(1.2rem, 4vw, 3.2rem);   /* page gutter (header, sections, footer) */
+  --bmsg-pad-section:  clamp(3.6rem, 9vh, 6.5rem);   /* section vertical rhythm */
+  --bmsg-max-inner:    1120px;                        /* content column */
+  --bmsg-pad-btn:      .9rem 2rem;                    /* pill CTA */
+  --bmsg-pad-navcta:   .55rem 1.25rem;                /* smaller header pill */
+
+  /* ----------------------------------------------------------------- motion */
+  --bmsg-ease-hover:   .15s;   /* button transform/background */
+  --bmsg-ease-card:    .18s ease;  /* card lift */
+  --bmsg-ease-img:     .3s ease;   /* image zoom on hover (scale 1.04) */
+
+  /* =======================================================================
+     Site-original variable names — aliases, so markup copied straight from
+     the live site keeps working when this file is included.
+     ======================================================================= */
+  --sun:        var(--bmsg-sun);
+  --sun-deep:   var(--bmsg-sun-deep);
+  --sky:        var(--bmsg-sky);
+  --cream:      var(--bmsg-cream);
+  --ink:        var(--bmsg-ink);
+  --muted:      var(--bmsg-muted);
+  --ogd-navy:   var(--bmsg-ogd-navy);
+  --ofr-purple: var(--bmsg-ofr-purple);
+  --ltr-green:  var(--bmsg-ltr-green);
+  --display:    var(--bmsg-font-display);
+  --body:       var(--bmsg-font-body);
+}
+
+/* ============================================================================
+   Signature component classes — the site's UI pieces, portable.
+   ========================================================================== */
+
+/* Base surface (opt-in): apply to <body> or a container */
+.bmsg-surface {
+  font-family: var(--bmsg-font-body);
+  background: var(--bmsg-cream);
+  color: var(--bmsg-ink);
+  line-height: var(--bmsg-lh-body);
+}
+
+/* --- Pill CTA button (site: .btn / .btn-sun / .btn-line) --- */
+.bmsg-btn {
+  display: inline-block;
+  text-decoration: none;
+  font-family: var(--bmsg-font-body);
+  font-weight: 700;
+  font-size: 1rem;
+  border-radius: var(--bmsg-radius-pill);
+  padding: var(--bmsg-pad-btn);
+  transition: transform var(--bmsg-ease-hover), background var(--bmsg-ease-hover);
+  cursor: pointer;
+  border: 0;
+}
+.bmsg-btn:focus-visible { outline: 3px solid var(--bmsg-gold); outline-offset: 3px; }
+.bmsg-btn-sun { background: var(--bmsg-sun); color: var(--bmsg-cta-ink); }
+.bmsg-btn-sun:hover { transform: translateY(-2px); background: var(--bmsg-sun-hover); }
+.bmsg-btn-line { border: 2px solid rgba(255,255,255,.85); color: var(--bmsg-white); background: transparent; }
+.bmsg-btn-line:hover { border-color: var(--bmsg-gold); color: var(--bmsg-gold); }
+
+/* --- Section eyebrow (site: .eyebrow) --- */
+.bmsg-eyebrow {
+  font-family: var(--bmsg-font-body);
+  font-size: var(--bmsg-fs-eyebrow);
+  letter-spacing: var(--bmsg-ls-eyebrow);
+  text-transform: uppercase;
+  font-weight: 700;
+  color: var(--bmsg-gold);
+  margin-bottom: 1rem;
+}
+/* On light backgrounds the gold eyebrow needs the deeper sun tone */
+.bmsg-eyebrow--onlight { color: var(--bmsg-sun-deep); }
+
+/* --- Headings --- */
+.bmsg-h1 {
+  font-family: var(--bmsg-font-display); font-weight: 400;
+  font-size: var(--bmsg-fs-h1); line-height: 1.05; letter-spacing: -.01em;
+}
+.bmsg-h1 em { font-style: italic; font-weight: 600; color: var(--bmsg-gold-em); }
+.bmsg-h2 {
+  font-family: var(--bmsg-font-display); font-weight: 600;
+  font-size: var(--bmsg-fs-h2); line-height: 1.12; margin-bottom: .9rem;
+}
+.bmsg-lede { max-width: 62ch; color: var(--bmsg-muted); font-size: var(--bmsg-fs-lede); }
+
+/* --- Card (site: .card, product-family cards) --- */
+.bmsg-card {
+  border-radius: var(--bmsg-radius-card);
+  overflow: hidden;
+  background: var(--bmsg-cream);
+  box-shadow: var(--bmsg-shadow-card);
+  display: flex; flex-direction: column;
+  transition: transform var(--bmsg-ease-card);
+}
+.bmsg-card:hover { transform: translateY(-5px); }
+.bmsg-card-body { padding: 1.4rem 1.4rem 1.6rem; display: flex; flex-direction: column; gap: .55rem; flex: 1; }
+.bmsg-card h3, .bmsg-card .bmsg-card-title {
+  font-family: var(--bmsg-font-display); font-weight: 600; font-size: var(--bmsg-fs-h3);
+}
+.bmsg-card p { color: var(--bmsg-muted); font-size: .97rem; flex: 1; }
+.bmsg-badge {
+  display: inline-block; color: var(--bmsg-white); font-weight: 700; font-size: .78rem;
+  letter-spacing: .06em; padding: .35rem .8rem; border-radius: var(--bmsg-radius-pill);
+  background: var(--bmsg-sun-deep);
+}
+/* Child-brand tinting, exactly as on the site */
+.bmsg-ogd .bmsg-badge { background: var(--bmsg-ogd-navy); }  .bmsg-ogd h3, .bmsg-ogd a { color: var(--bmsg-ogd-navy); }
+.bmsg-ofr .bmsg-badge { background: var(--bmsg-ofr-purple); } .bmsg-ofr h3, .bmsg-ofr a { color: var(--bmsg-ofr-purple); }
+.bmsg-ltr .bmsg-badge { background: var(--bmsg-ltr-green); }  .bmsg-ltr h3, .bmsg-ltr a { color: var(--bmsg-ltr-green); }
+
+/* --- Nav bar (site: header/nav — overlays a dark hero) --- */
+.bmsg-nav {
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 1.3rem var(--bmsg-pad-x);
+}
+.bmsg-nav--overlay { position: absolute; top: 0; left: 0; right: 0; z-index: 20; }
+.bmsg-nav--solid { background: var(--bmsg-sky); }
+.bmsg-nav .bmsg-logo { display: flex; align-items: center; gap: .7rem; text-decoration: none; }
+.bmsg-nav .bmsg-logo b {
+  font-family: var(--bmsg-font-display); font-weight: 600; font-size: 1.3rem;
+  color: var(--bmsg-white); line-height: 1.1;
+}
+.bmsg-nav .bmsg-logo b small {
+  display: block; font-family: var(--bmsg-font-body); font-weight: 600; font-size: .68rem;
+  letter-spacing: .24em; text-transform: uppercase; color: var(--bmsg-gold);
+}
+.bmsg-nav nav, .bmsg-nav .bmsg-nav-links { display: flex; align-items: center; }
+.bmsg-nav nav a, .bmsg-nav .bmsg-nav-links a {
+  color: var(--bmsg-white); text-decoration: none; font-weight: 600;
+  font-size: var(--bmsg-fs-nav); margin-left: 1.5rem;
+}
+.bmsg-nav nav a:hover, .bmsg-nav nav a:focus-visible { color: var(--bmsg-gold); }
+.bmsg-nav nav a:focus-visible { outline: 2px solid var(--bmsg-gold); outline-offset: 4px; border-radius: 3px; }
+.bmsg-nav .bmsg-nav-cta {
+  background: var(--bmsg-sun); color: var(--bmsg-cta-ink) !important;
+  border-radius: var(--bmsg-radius-pill); padding: var(--bmsg-pad-navcta); text-shadow: none !important;
+}
+.bmsg-nav .bmsg-nav-cta:hover { background: var(--bmsg-sun-hover); }
+@media (max-width: 640px) { .bmsg-nav nav a:not(.bmsg-nav-cta) { display: none; } }
+
+/* --- Footer (site: footer) --- */
+.bmsg-footer {
+  background: var(--bmsg-footer-bg); color: var(--bmsg-footer-ink);
+  padding: 2rem var(--bmsg-pad-x); font-size: var(--bmsg-fs-small);
+  display: flex; justify-content: space-between; flex-wrap: wrap; gap: .8rem;
+}
+.bmsg-footer a { color: var(--bmsg-gold); text-decoration: none; margin-left: 1rem; }
+.bmsg-footer a:first-child { margin-left: 0; }
+
+/* --- Section wrapper (site rhythm) --- */
+.bmsg-section { padding: var(--bmsg-pad-section) var(--bmsg-pad-x); }
+.bmsg-inner { max-width: var(--bmsg-max-inner); margin: 0 auto; }
+
+/* --- Motion (site's entrance animation, reduced-motion safe) --- */
+@media (prefers-reduced-motion: no-preference) {
+  .bmsg-rise { opacity: 0; transform: translateY(14px); animation: bmsg-rise .9s ease .4s forwards; }
+  @keyframes bmsg-rise { to { opacity: 1; transform: translateY(0); } }
+}

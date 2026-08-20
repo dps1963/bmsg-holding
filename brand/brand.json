@@ -1,0 +1,116 @@
+{
+  "id": "bmsg",
+  "name": "BringMeSunshine Group",
+  "domain": "bringmesunshinegroup.com",
+  "status": "extracted-from-live-site",
+  "extractedFrom": "../index.html (verbatim mirror of the live site, 2026-07-31)",
+  "updated": "2026-07-31",
+  "voice": {
+    "oneLiner": "The group that brings sunshine — parent of OneGoodDeed, OurFamilyRocks and LearnToReadReadToLearn.",
+    "tagline": "Goodness, education and wellbeing for all",
+    "eyebrow": "Goodness · Education · Wellbeing",
+    "tone": "steady, trustworthy, generous; warm and human; the umbrella voice behind the product brands"
+  },
+  "colors": {
+    "primary": {
+      "sun": { "value": "#f4a836", "role": "primary sunshine orange — logo mark, filled CTAs, gradient core", "note": "governing-doc seed chip was #f2a20c; the live site's authoritative value is #f4a836" },
+      "sunDeep": { "value": "#d97e1f", "role": "deeper sun shade, defined in :root (reserved)" },
+      "sky": { "value": "#1c2a44", "role": "deep dawn navy — hero/banner background, theme-color meta" },
+      "cream": { "value": "#fdf8ef", "role": "page background" },
+      "ink": { "value": "#232a26", "role": "body text" },
+      "muted": { "value": "#5a615c", "role": "secondary text" }
+    },
+    "highlights": {
+      "gold": { "value": "#ffd98c", "role": "highlight gold — eyebrow, nav hover, focus rings, footer links, logo sub-line" },
+      "goldEm": { "value": "#ffcf6e", "role": "italic emphasis inside H1" },
+      "sunHover": { "value": "#ffc25e", "role": "CTA hover fill" },
+      "ctaInk": { "value": "#3a2508", "role": "dark-brown text on sun-coloured pills" },
+      "white": { "value": "#ffffff", "role": "text on dark/photo backgrounds" }
+    },
+    "surfaces": {
+      "footerBg": { "value": "#182233", "role": "footer background" },
+      "footerInk": { "value": "#c8cedd", "role": "footer body text" },
+      "scrim": { "value": "#0e1422", "role": "rgba(14,20,34,x) — photo scrims and caption gradients" },
+      "bannerScrim": { "value": "rgba(16,24,40,0.68)", "role": "CTA-banner overlay" },
+      "shadowTint": { "value": "rgb(35,42,38)", "role": "ink-toned base of all box-shadows (.12/.14/.22 alpha)" }
+    },
+    "productAccents": {
+      "ogdNavy": { "value": "#1e2f6e", "role": "OneGoodDeed accent (badge, links, pillar dot)", "gradientLight": "#3b4f9e" },
+      "ofrPurple": { "value": "#6b4fa1", "role": "OurFamilyRocks accent", "gradientLight": "#9a7ecf" },
+      "ltrGreen": { "value": "#2f6e4e", "role": "LearnToRead·ReadToLearn accent", "gradientLight": "#58a37c" }
+    },
+    "gradientStops": {
+      "dawnPink": "#d3628a",
+      "duskPurple": "#4a2f58",
+      "amberDeep": "#b8652f",
+      "amberWarm": "#c97b3a"
+    },
+    "gradients": {
+      "sunrise": "radial-gradient(circle at 50% 78%, #ffd98c 0%, #f4a836 18%, #d3628a 45%, #4a2f58 75%, #1c2a44 100%)",
+      "sunball": "radial-gradient(circle at 60% 30%, #ffd98c, #f4a836 40%, #b8652f 100%)",
+      "captionFade": "linear-gradient(to top, rgba(14,20,34,.85), transparent)"
+    }
+  },
+  "typography": {
+    "display": { "family": "Fraunces", "stack": "'Fraunces', serif", "weights": [400, 600], "opticalSize": "9..144", "use": "H1 (400 + italic 600 em), H2/H3/logo wordmark (600)" },
+    "body": { "family": "Albert Sans", "stack": "'Albert Sans', sans-serif", "weights": [400, 500, 600, 700], "use": "body copy, nav, buttons, eyebrows, badges" },
+    "googleFonts": "https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600&family=Albert+Sans:wght@400;500;600;700&display=swap",
+    "scale": {
+      "h1": { "size": "clamp(2.5rem,6vw,4.5rem)", "weight": 400, "lineHeight": 1.05, "letterSpacing": "-.01em", "family": "display" },
+      "h2": { "size": "clamp(1.8rem,3.4vw,2.6rem)", "weight": 600, "lineHeight": 1.12, "family": "display" },
+      "h3": { "size": "1.35rem", "weight": 600, "family": "display" },
+      "lede": { "size": "1.1rem", "color": "muted" },
+      "heroP": { "size": "clamp(1.02rem,1.4vw,1.2rem)" },
+      "body": { "size": "1rem", "lineHeight": 1.65 },
+      "nav": { "size": ".95rem", "weight": 600 },
+      "footer": { "size": ".88rem" },
+      "eyebrow": { "size": ".78rem", "weight": 700, "letterSpacing": ".24em", "transform": "uppercase" },
+      "badge": { "size": ".78rem", "weight": 700, "letterSpacing": ".06em" },
+      "logoWordmark": { "size": "1.3rem", "weight": 600, "family": "display" },
+      "logoSubline": { "size": ".68rem", "weight": 600, "letterSpacing": ".24em", "transform": "uppercase", "family": "body" }
+    }
+  },
+  "radii": { "pill": "999px", "photo": "20px", "card": "18px", "tile": "16px" },
+  "shadows": {
+    "card": "0 12px 34px rgba(35,42,38,.12)",
+    "photo": "0 22px 50px rgba(35,42,38,.22)",
+    "tile": "0 10px 26px rgba(35,42,38,.14)",
+    "heroText": "0 2px 18px rgba(0,0,0,.55)"
+  },
+  "logos": {
+    "mark": "inline SVG sun: 11r circle + 8 stroke-linecap rays, fill/stroke #f4a836 on dark, viewBox 0 0 48 48 (see ../index.html header)",
+    "wordmark": "\"BringMeSunshine\" in Fraunces 600 with \"GROUP\" sub-line in Albert Sans 600, .24em tracking, gold #ffd98c",
+    "assets": {
+      "faviconSvg": "../favicon.svg",
+      "faviconIco": "../favicon.ico",
+      "favicon32": "../favicon-32x32.png",
+      "favicon16": "../favicon-16x16.png",
+      "appleTouch": "../apple-touch-icon.png",
+      "appleTouch167": "../apple-touch-icon-167x167.png",
+      "appleTouch152": "../apple-touch-icon-152x152.png",
+      "androidChrome192": "../icons/android-chrome-192x192.png",
+      "androidChrome512": "../icons/android-chrome-512x512.png",
+      "maskable192": "../icons/maskable-icon-192x192.png",
+      "maskable512": "../icons/maskable-icon-512x512.png",
+      "iosAppIcon1024": "../icons/ios-appicon-1024x1024.png",
+      "mstile150": "../icons/mstile-150x150.png",
+      "mstile310": "../icons/mstile-310x310.png",
+      "webmanifest": "../site.webmanifest",
+      "headSnippet": "../icons/HEAD-SNIPPET.html"
+    },
+    "themeColor": "#1c2a44"
+  },
+  "motion": {
+    "heroEntrance": "hero copy rises 14px + fades in — .9s ease with .4s delay (keyframes 'rise')",
+    "sunflare": "sun-flare overlay fades in over 2.4s ease with .2s delay (keyframes 'dawn'), mix-blend-mode screen",
+    "hoverLift": "cards translateY(-5px) over .18s; filled buttons translateY(-2px) over .15s with hover fill #ffc25e",
+    "imageZoom": "people-strip images scale(1.04) over .3s ease on hover",
+    "reducedMotion": "all entrance animations wrapped in @media (prefers-reduced-motion: no-preference)",
+    "scroll": "html { scroll-behavior: smooth }"
+  },
+  "family": [
+    { "id": "ogd", "name": "OneGoodDeed", "url": "https://OneGoodDeed.com", "accent": "#1e2f6e" },
+    { "id": "ofr", "name": "OurFamilyRocks", "url": "https://OurFamilyRocks.com", "accent": "#6b4fa1" },
+    { "id": "ltr", "name": "LearnToRead·ReadToLearn", "url": "https://LearnToReadReadToLearn.com", "accent": "#2f6e4e" }
+  ]
+}

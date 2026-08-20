@@ -1,0 +1,35 @@
+{
+  "source": "../index.html (live-site mirror, 2026-07-31)",
+  "header": {
+    "logo": { "label": "BringMeSunshine Group", "href": "#", "ariaLabel": "BringMeSunshine Group home" },
+    "nav": {
+      "ariaLabel": "Primary",
+      "items": [
+        { "label": "Our mission", "href": "#mission" },
+        { "label": "Our products", "href": "#family" }
+      ],
+      "cta": { "label": "Get in touch", "href": "#connect", "class": "nav-cta", "style": "sun pill" }
+    },
+    "mobileBehaviour": "below 640px only the pill CTA is shown; text links are hidden"
+  },
+  "heroCtas": [
+    { "label": "Explore our products", "href": "#family", "style": "btn btn-sun (filled sun pill)" },
+    { "label": "Our mission", "href": "#mission", "style": "btn btn-line (outline pill)" }
+  ],
+  "bannerCta": { "label": "Get in touch", "href": "#", "style": "btn btn-sun" },
+  "footer": {
+    "copyright": "© 2026 BringMeSunshine Group. Goodness, education and wellbeing for all.",
+    "groups": [
+      {
+        "name": "links",
+        "items": [
+          { "label": "OneGoodDeed", "href": "https://OneGoodDeed.com" },
+          { "label": "OurFamilyRocks", "href": "https://OurFamilyRocks.com" },
+          { "label": "LearnToRead", "href": "https://LearnToReadReadToLearn.com" },
+          { "label": "Privacy", "href": "privacy.html" },
+          { "label": "Terms & Conditions", "href": "terms.html" }
+        ]
+      }
+    ]
+  }
+}
