@@ -69,10 +69,25 @@ nav a:hover,nav a:focus-visible{color:#ffd98c}
 nav a:focus-visible{outline:2px solid #ffd98c;outline-offset:4px;border-radius:3px}
 .nav-cta{
   background:var(--sun);color:#3a2508 !important;border-radius:999px;
-  padding:.55rem 1.25rem;text-shadow:none !important;
+  padding:.55rem 1.25rem;text-shadow:none !important;white-space:nowrap;
 }
 .nav-cta:hover{background:#ffc25e;color:#3a2508 !important}
-@media(max-width:640px){nav a:not(.nav-cta){display:none}}
+/* ---------- mobile flow (21 Aug 2026) ---------- */
+@media(max-width:640px){
+  header{flex-direction:column;align-items:flex-start;gap:.7rem;padding:1rem 1.2rem}
+  nav{width:100%;flex-wrap:wrap;gap:.5rem .55rem}
+  nav a{margin-left:0;font-size:.86rem}
+  nav a:not(.nav-cta){padding:.42rem .85rem;border:1.5px solid rgba(255,255,255,.45);border-radius:999px}
+  .nav-cta{padding:.45rem 1rem}
+  .hero{padding-top:200px}
+  .strip-grid{grid-template-columns:1fr 1fr;gap:.8rem}
+  .strip-grid figcaption{font-size:.72rem;padding:.5rem .6rem}
+  .mission-photo{aspect-ratio:4/3}
+  .contact-card input,.contact-card textarea{font-size:1rem}
+  footer{flex-direction:column;align-items:center;text-align:center;gap:.9rem}
+  footer span:last-child{display:flex;flex-wrap:wrap;justify-content:center;gap:.3rem 1.1rem}
+  footer a{margin-left:0}
+}
 
 /* ---------- hero ---------- */
 .hero{position:relative;min-height:100svh;display:flex;align-items:flex-end;overflow:hidden;background:var(--sky);padding-top:104px}
