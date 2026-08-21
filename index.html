@@ -235,6 +235,13 @@ footer a:first-child{margin-left:0}
   footer span:last-child{display:flex;flex-wrap:wrap;justify-content:center;gap:.3rem 1.1rem}
   footer a{margin-left:0}
 }
+/* two-line hero headline on wide screens (21 Aug 2026) */
+.h1-br{display:none}
+@media(min-width:900px){
+  .h1-br{display:inline}
+  .hero-copy{max-width:1080px}
+  h1{font-size:clamp(2.5rem,5.6vw,4.2rem)}
+}
 </style>
 </head>
 <body>
@@ -281,7 +288,7 @@ footer a:first-child{margin-left:0}
 
   <div class="hero-copy">
     <p class="eyebrow">Goodness · Education · Wellbeing</p>
-    <h1>Bringing a little more <em>sunshine</em> into everyday life.</h1>
+    <h1>Bringing a little more <em>sunshine</em> <br class="h1-br">into everyday life.</h1>
     <p>BringMeSunshineGroup.com builds warm, human technology that helps people do good, learn well, and live better — together. One group, three products, one purpose: goodness, education and wellbeing for all.</p>
     <div class="cta-row">
       <a class="btn btn-sun" href="#family">Explore our products</a>
