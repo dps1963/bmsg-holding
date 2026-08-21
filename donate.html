@@ -24,7 +24,7 @@
   main{max-width:660px;text-align:center;display:flex;flex-direction:column;align-items:center;gap:18px;margin:auto 0}
   h1{font-family:var(--display);font-weight:600;font-size:clamp(1.9rem,6vw,2.7rem);color:var(--sky);text-wrap:balance;margin-top:14px}
   h1 em{font-style:italic;color:var(--sun-deep)}
-  p.lead{color:var(--muted);max-width:52ch;font-size:1.06rem}
+  p.lead{color:#000;max-width:52ch;font-size:1.06rem}
   .ways{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:14px;width:100%;margin-top:8px}
   .way{background:#fff;border:1px solid #eee3cf;border-radius:16px;padding:20px 16px;display:flex;flex-direction:column;gap:8px;align-items:center;box-shadow:0 4px 18px rgba(35,42,38,.06)}
   .way h2{font-family:var(--display);font-weight:600;font-size:1.08rem;color:var(--sky)}
@@ -37,9 +37,7 @@
   .honest{background:#fff;border-left:5px solid var(--sun);border-radius:0 12px 12px 0;padding:12px 16px;
           text-align:left;font-size:.88rem;color:var(--muted);max-width:600px}
   .family{display:flex;gap:14px;flex-wrap:wrap;justify-content:center;font-size:.9rem;margin-top:6px}
-  .family a{text-decoration:none;font-weight:600}
-  .family a.o{color:var(--ogd)} .family a.f{color:var(--ofr)} .family a.l{color:var(--ltr)}
-  footer{margin-top:38px;color:var(--muted);font-size:.85rem;text-align:center}
+      footer{margin-top:38px;color:var(--muted);font-size:.85rem;text-align:center}
   footer a{color:var(--sun-deep);text-decoration:none;font-weight:600}
 
 /* --- warm backdrop video (front-page hero, breathing loop) --- */
@@ -53,8 +51,14 @@
   .backdrop{background:url(images/hero-1.jpg) center/cover no-repeat}}
 .way{background:rgba(255,255,255,.92);backdrop-filter:blur(2px)}
 .honest{background:rgba(255,255,255,.92)}
-p.lead{background:rgba(253,248,239,.78);border-radius:14px;padding:12px 18px}
-.family{background:rgba(253,248,239,.82);border-radius:12px;padding:8px 16px}
+.family-cap{color:#000;font-weight:600;font-size:.92rem;margin-top:10px}
+.family{display:flex;gap:14px;flex-wrap:wrap;justify-content:center;background:none;padding:0}
+.family a{display:flex;flex-direction:column;align-items:center;gap:6px;background:rgba(255,255,255,.94);
+  border:1px solid #eee3cf;border-radius:14px;padding:14px 20px;text-decoration:none;
+  box-shadow:0 4px 14px rgba(35,42,38,.08);transition:transform .15s ease}
+.family a:hover{transform:translateY(-2px)}
+.family img{height:44px;width:auto;display:block}
+.family a span{font-size:.75rem;font-weight:700;color:var(--ogd)}
 footer{color:#3c4239;background:rgba(253,248,239,.82);border-radius:12px;padding:8px 16px}
 </style>
 </head>
@@ -97,16 +101,16 @@ footer{color:#3c4239;background:rgba(253,248,239,.82);border-radius:12px;padding
     </div>
   </div>
 
-  <div class="honest"><b>The honest bit:</b> BringMeSunshineGroup.com is run personally by its founder as a
+  <div class="honest">BringMeSunshineGroup.com is run personally by its founder as a
   sole trader, not (yet) a registered charity. A gift here is personal support for the group's work — it is
   not a tax-deductible charitable donation, and it may be treated as income under New Zealand tax rules.
   Every dollar goes into building and running the platforms.</div>
 
+  <p class="family-cap">Your gift supports the whole family</p>
   <div class="family">
-    Your gift supports:&nbsp;
-    <a class="o" href="https://onegooddeed.com">OneGoodDeed.com</a>
-    <a class="f" href="https://ourfamilyrocks.com">OurFamilyRocks.com</a>
-    <a class="l" href="https://learntoreadreadtolearn.com">LearnToReadReadToLearn.com</a>
+    <a href="https://onegooddeed.com" aria-label="OneGoodDeed.com"><img src="images/logo-ogd.png" alt="OneGoodDeed"><span>OneGoodDeed.com</span></a>
+    <a href="https://ourfamilyrocks.com" aria-label="OurFamilyRocks.com"><img src="images/logo-ofr.webp" alt="Our Family Rocks"></a>
+    <a href="https://learntoreadreadtolearn.com" aria-label="LearnToReadReadToLearn.com"><img src="images/logo-ltr.svg" alt="Learn to Read, Read to Learn"></a>
   </div>
 </main>
 <footer>© 2026 BringMeSunshineGroup.com · <a href="index.html">home</a> · <a href="privacy.html">privacy</a> · <a href="terms.html">terms</a></footer>
