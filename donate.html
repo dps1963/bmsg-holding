@@ -17,7 +17,9 @@
   body{font-family:var(--body);color:var(--ink);background:transparent;line-height:1.65;min-height:100vh;
        display:flex;flex-direction:column;align-items:center;padding:0 22px 40px}
   header{padding:26px 0 6px;text-align:center}
-  .logo{display:inline-flex;flex-direction:column;align-items:center;text-decoration:none}
+  .logo{display:inline-flex;align-items:center;gap:.7rem;text-decoration:none}
+  .logo svg{width:44px;height:44px;flex:none}
+  .lockup{display:flex;flex-direction:column;align-items:flex-start}
   .logo b{font-family:var(--display);font-weight:600;font-size:1.5rem;color:var(--sky);line-height:1.1}
   .logo b small{color:var(--sun-deep);font-size:.72em}
   .kind-tag{font-family:'Caveat',cursive;font-size:1.15rem;font-weight:600;color:var(--sun-deep);margin-top:2px}
@@ -71,8 +73,19 @@ footer{color:#3c4239;background:rgba(253,248,239,.82);border-radius:12px;padding
 </div>
 <header>
   <a class="logo" href="index.html">
-    <b>BringMeSunshine<small>Group.com</small></b>
-    <span id="kindTag" class="kind-tag">always be kind</span>
+    <svg viewBox="0 0 48 48" aria-hidden="true">
+      <circle cx="24" cy="24" r="11" fill="#f4a836"/>
+      <g stroke="#f4a836" stroke-width="3" stroke-linecap="round">
+        <line x1="24" y1="3" x2="24" y2="9"/><line x1="24" y1="39" x2="24" y2="45"/>
+        <line x1="3" y1="24" x2="9" y2="24"/><line x1="39" y1="24" x2="45" y2="24"/>
+        <line x1="9" y1="9" x2="13.5" y2="13.5"/><line x1="34.5" y1="34.5" x2="39" y2="39"/>
+        <line x1="39" y1="9" x2="34.5" y2="13.5"/><line x1="9" y1="39" x2="13.5" y2="34.5"/>
+      </g>
+    </svg>
+    <span class="lockup">
+      <b>BringMeSunshine<small>Group.com</small></b>
+      <span id="kindTag" class="kind-tag">always be kind</span>
+    </span>
   </a>
 </header>
 <main>
