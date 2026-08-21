@@ -45,14 +45,16 @@
 /* --- warm backdrop video (front-page hero, breathing loop) --- */
 .backdrop{position:fixed;inset:0;z-index:-1;overflow:hidden}
 .backdrop video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.backdrop video{filter:saturate(1.3) contrast(1.04)}
 .backdrop .veil{position:absolute;inset:0;background:
-  linear-gradient(180deg, rgba(253,248,239,.95) 0%, rgba(253,248,239,.88) 38%, rgba(253,248,239,.66) 100%),
-  linear-gradient(115deg, rgba(244,168,54,.10), transparent 55%)}
+  linear-gradient(180deg, rgba(253,248,239,.88) 0%, rgba(253,248,239,.62) 34%, rgba(253,248,239,.26) 100%),
+  linear-gradient(115deg, rgba(244,168,54,.18), transparent 60%)}
 @media (prefers-reduced-motion: reduce){.backdrop video{display:none}
   .backdrop{background:url(images/hero-1.jpg) center/cover no-repeat}}
 .way{background:rgba(255,255,255,.92);backdrop-filter:blur(2px)}
 .honest{background:rgba(255,255,255,.92)}
-footer{color:#4a5049}
+.family{background:rgba(253,248,239,.82);border-radius:12px;padding:8px 16px}
+footer{color:#3c4239;background:rgba(253,248,239,.82);border-radius:12px;padding:8px 16px}
 </style>
 </head>
 <body>
