@@ -72,22 +72,6 @@ nav a:focus-visible{outline:2px solid #ffd98c;outline-offset:4px;border-radius:3
   padding:.55rem 1.25rem;text-shadow:none !important;white-space:nowrap;
 }
 .nav-cta:hover{background:#ffc25e;color:#3a2508 !important}
-/* ---------- mobile flow (21 Aug 2026) ---------- */
-@media(max-width:640px){
-  header{flex-direction:column;align-items:flex-start;gap:.7rem;padding:1rem 1.2rem}
-  nav{width:100%;flex-wrap:wrap;gap:.5rem .55rem}
-  nav a{margin-left:0;font-size:.86rem}
-  nav a:not(.nav-cta){padding:.42rem .85rem;border:1.5px solid rgba(255,255,255,.45);border-radius:999px}
-  .nav-cta{padding:.45rem 1rem}
-  .hero{padding-top:200px}
-  .strip-grid{grid-template-columns:1fr 1fr;gap:.8rem}
-  .strip-grid figcaption{font-size:.72rem;padding:.5rem .6rem}
-  .mission-photo{aspect-ratio:4/3}
-  .contact-card input,.contact-card textarea{font-size:1rem}
-  footer{flex-direction:column;align-items:center;text-align:center;gap:.9rem}
-  footer span:last-child{display:flex;flex-wrap:wrap;justify-content:center;gap:.3rem 1.1rem}
-  footer a{margin-left:0}
-}
 
 /* ---------- hero ---------- */
 .hero{position:relative;min-height:100svh;display:flex;align-items:flex-end;overflow:hidden;background:var(--sky);padding-top:104px}
@@ -225,6 +209,22 @@ footer a:first-child{margin-left:0}
 .contact-card .cf-note a{color:var(--sun-deep);font-weight:600}
 .lockup{display:flex;flex-direction:column}
 .kind-tag{font-family:'Caveat',cursive;font-size:1.4rem;font-weight:600;letter-spacing:.02em;color:#ffd98c;text-shadow:0 1px 6px rgba(0,0,0,.5);margin:2px 0 0 2.45rem}
+/* ---------- mobile flow (21 Aug 2026) ---------- */
+@media(max-width:640px){
+  header{flex-direction:column;align-items:flex-start;gap:.7rem;padding:1rem 1.2rem}
+  nav{width:100%;flex-wrap:wrap;gap:.5rem .55rem}
+  nav a{margin-left:0;font-size:.86rem}
+  nav a:not(.nav-cta){padding:.42rem .85rem;border:1.5px solid rgba(255,255,255,.45);border-radius:999px}
+  .nav-cta{padding:.45rem 1rem}
+  .hero{padding-top:200px}
+  .strip-grid{grid-template-columns:1fr 1fr;gap:.8rem}
+  .strip-grid figcaption{font-size:.72rem;padding:.5rem .6rem}
+  .mission-photo{aspect-ratio:4/3}
+  .contact-card input,.contact-card textarea{font-size:1rem}
+  footer{flex-direction:column;align-items:center;text-align:center;gap:.9rem}
+  footer span:last-child{display:flex;flex-wrap:wrap;justify-content:center;gap:.3rem 1.1rem}
+  footer a{margin-left:0}
+}
 </style>
 </head>
 <body>
