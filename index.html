@@ -54,7 +54,12 @@ header{
   font-family:var(--display);font-weight:600;font-size:1.9rem;color:#fff;line-height:1.1;
   text-shadow:0 1px 8px rgba(0,0,0,.45);
 }
-.logo .l2{display:block;font-family:var(--body);font-weight:600;font-size:.8rem;letter-spacing:.26em;text-transform:uppercase;color:#ffd98c;margin:3px 0 0 2.45rem}
+.logo b small{color:#ffd98c;font-size:.72em}
+@media(max-width:760px){
+  .logo b{font-size:1.35rem}
+  .logo svg{width:1.35rem;height:1.35rem}
+  .kind-tag{font-size:1.1rem;margin-left:1.9rem}
+}
 nav{display:flex;align-items:center}
 nav a{
   color:#fff;text-decoration:none;font-weight:600;font-size:.95rem;margin-left:1.5rem;
@@ -222,9 +227,8 @@ footer a:first-child{margin-left:0}
             <line x1="39" y1="9" x2="34.5" y2="13.5"/><line x1="9" y1="39" x2="13.5" y2="34.5"/>
           </g>
         </svg>
-        <b>BringMeSunshine</b>
+        <b>BringMeSunshine<small>Group.com</small></b>
       </span>
-      <small class="l2">Group.com</small>
       <span id="kindTag" class="kind-tag">always be kind</span>
     </span>
   </a>
