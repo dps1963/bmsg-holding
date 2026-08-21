@@ -102,9 +102,8 @@ footer{color:#3c4239;background:rgba(253,248,239,.82);border-radius:12px;padding
     </div>
     <div class="way">
       <h2>Monthly sunshine</h2>
-      <p>A small monthly gift that quietly keeps the lights on.</p>
+      <p>A small monthly gift that quietly keeps the lights on — NZ$5 a month, or pick a quantity for more.</p>
       <a class="btn" id="giveMonthly" href="#" aria-disabled="true">Give monthly</a>
-      <span class="pending">Opens with Stripe setup</span>
     </div>
     <div class="way">
       <h2>Another way?</h2>
@@ -129,7 +128,7 @@ footer{color:#3c4239;background:rgba(253,248,239,.82);border-radius:12px;padding
 <script>
 // Stripe Payment Links land here the day they exist (Dave pastes the buy.stripe.com URLs; buttons go live).
 var STRIPE_LINK_ONCE = "https://buy.stripe.com/7sY4gsgf16is4uFget9fW00"; // live 21 Aug 2026
-var STRIPE_LINK_MONTHLY = "";  // e.g. https://buy.stripe.com/yyyy
+var STRIPE_LINK_MONTHLY = "https://buy.stripe.com/8x25kw2obfT2gdn4vL9fW01"; // live 21 Aug 2026
 (function(){
   function arm(id, url){ var a=document.getElementById(id); if(a && url){ a.href=url; a.removeAttribute("aria-disabled"); } }
   arm("giveOnce", STRIPE_LINK_ONCE); arm("giveMonthly", STRIPE_LINK_MONTHLY);
