@@ -16,6 +16,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600&family=Albert+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;600&display=swap" rel="stylesheet">
 <style>
 :root{
   --sun:#f4a836;--sun-deep:#d97e1f;--sky:#1c2a44;--cream:#fdf8ef;--ink:#232a26;--muted:#5a615c;
@@ -23,13 +24,16 @@
 }
 *{margin:0;padding:0;box-sizing:border-box}
 body{font-family:var(--body);background:var(--cream);color:var(--ink);line-height:1.65}
-header{background:var(--sky);display:flex;align-items:center;justify-content:space-between;padding:.9rem clamp(1.2rem,4vw,3.2rem)}
-.logo{display:flex;align-items:center;gap:.7rem;text-decoration:none}
-.logo svg{width:42px;height:42px;flex:none}
-.logo b{font-family:var(--display);font-weight:600;font-size:1.15rem;color:#fff;line-height:1.1}
-.logo b small{display:block;font-family:var(--body);font-weight:600;font-size:.68rem;letter-spacing:.24em;text-transform:uppercase;color:#ffd98c}
-nav a{color:#e8ebf4;text-decoration:none;font-size:.92rem;margin-left:1.4rem}
-nav a:hover{color:#ffd98c}
+header{background:var(--cream);border-bottom:1px solid #f0e7d4;display:flex;align-items:center;justify-content:space-between;padding:.9rem clamp(1.2rem,4vw,3.2rem)}
+.logo{display:flex;text-decoration:none}
+.lockup{display:flex;flex-direction:column}
+.wordline{display:inline-flex;align-items:center;gap:.45rem}
+.logo svg{width:1.5rem;height:1.5rem;flex:none}
+.logo b{font-family:var(--display);font-weight:600;font-size:1.5rem;color:var(--sky);line-height:1.1}
+.logo b small{color:var(--sun-deep);font-size:.72em}
+.kind-tag{font-family:'Caveat',cursive;font-size:1.15rem;font-weight:600;color:var(--sun-deep);margin:2px 0 0 1.95rem}
+nav a{color:var(--sky);font-weight:600;text-decoration:none;font-size:.92rem;margin-left:1.4rem}
+nav a:hover{color:var(--sun-deep)}
 main{max-width:820px;margin:0 auto;padding:3rem clamp(1.2rem,4vw,2rem) 4rem}
 h1{font-family:var(--display);font-size:clamp(1.9rem,4vw,2.6rem);color:var(--sky);margin-bottom:.4rem}
 .updated{color:var(--muted);font-size:.88rem;margin-bottom:2rem}
@@ -46,6 +50,7 @@ footer a:first-child{margin-left:0}
 
 <header>
   <a class="logo" href="index.html" aria-label="BringMeSunshineGroup.com home">
+    <span class="lockup"><span class="wordline">
     <svg viewBox="0 0 48 48" aria-hidden="true">
       <circle cx="24" cy="24" r="11" fill="#f4a836"/>
       <g stroke="#f4a836" stroke-width="3" stroke-linecap="round">
@@ -56,6 +61,8 @@ footer a:first-child{margin-left:0}
       </g>
     </svg>
     <b>BringMeSunshine<small>Group.com</small></b>
+    </span>
+    <span id="kindTag" class="kind-tag">always be kind</span></span>
   </a>
   <nav aria-label="Primary">
     <a href="index.html">Home</a>
@@ -114,5 +121,15 @@ footer a:first-child{margin-left:0}
   <span><a href="https://OneGoodDeed.com">OneGoodDeed</a><a href="https://OurFamilyRocks.com">OurFamilyRocks</a><a href="https://LearnToReadReadToLearn.com">LearnToRead</a><a href="privacy.html">Privacy</a><a href="terms.html">Terms &amp; Conditions</a></span>
 </footer>
 
+<script>
+(function(){
+  var K={en:"always be kind",mi:"kia atawhai tonu",fr:"soyez toujours bienveillant",es:"s\u00e9 siempre amable",de:"sei immer freundlich",it:"sii sempre gentile",pt:"seja sempre gentil",nl:"wees altijd vriendelijk",sv:"var alltid sn\u00e4ll",nb:"v\u00e6r alltid snill",no:"v\u00e6r alltid snill",da:"v\u00e6r altid venlig",fi:"ole aina yst\u00e4v\u00e4llinen",pl:"b\u0105d\u017a zawsze \u017cyczliwy",cs:"bu\u010f v\u017edy laskav\u00fd",ro:"fii mereu bun",hu:"l\u00e9gy mindig kedves",el:"\u03bd\u03b1 \u03b5\u03af\u03c3\u03b1\u03b9 \u03c0\u03ac\u03bd\u03c4\u03b1 \u03b5\u03c5\u03b3\u03b5\u03bd\u03b9\u03ba\u03cc\u03c2",tr:"her zaman nazik ol",ru:"\u0432\u0441\u0435\u0433\u0434\u0430 \u0431\u0443\u0434\u044c \u0434\u043e\u0431\u0440\u044b\u043c",uk:"\u0437\u0430\u0432\u0436\u0434\u0438 \u0431\u0443\u0434\u044c \u0434\u043e\u0431\u0440\u0438\u043c",ar:"\u0643\u0646 \u0644\u0637\u064a\u0641\u064b\u0627 \u062f\u0627\u0626\u0645\u064b\u0627",he:"\u05d4\u05d9\u05d5 \u05ea\u05de\u05d9\u05d3 \u05d0\u05d3\u05d9\u05d1\u05d9\u05dd",hi:"\u0939\u092e\u0947\u0936\u093e \u0926\u092f\u093e\u0932\u0941 \u092c\u0928\u0947\u0902",th:"\u0e21\u0e35\u0e40\u0e21\u0e15\u0e15\u0e32\u0e40\u0e2a\u0e21\u0e2d",vi:"lu\u00f4n t\u1eed t\u1ebf",id:"selalu berbaik hati",ms:"sentiasa berbaik hati",fil:"laging maging mabait",tl:"laging maging mabait",ja:"\u3044\u3064\u3082\u89aa\u5207\u306b",ko:"\ud56d\uc0c1 \uce5c\uc808\ud558\uac8c",zh:"\u5e38\u6000\u5584\u610f",zhh:"\u5e38\u61f7\u5584\u610f",sm:"ia agalelei pea"};
+  var RTL={ar:1,he:1};
+  function pick(langs){for(var i=0;i<langs.length;i++){var l=String(langs[i]).toLowerCase();if(l.indexOf("zh")===0){return {t:(/tw|hk|mo|hant/.test(l)?K.zhh:K.zh),l:l,r:0};}var p=l.split("-")[0];if(K[p])return {t:K[p],l:p,r:RTL[p]||0};}return {t:K.en,l:"en",r:0};}
+  var el=document.getElementById("kindTag"); if(!el) return;
+  var m=pick(navigator.languages||[navigator.language||"en"]);
+  el.textContent=m.t; el.setAttribute("lang",m.l); el.setAttribute("dir",m.r?"rtl":"ltr");
+})();
+</script>
 </body>
 </html>
