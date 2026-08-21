@@ -47,13 +47,14 @@ header{
   display:flex;align-items:center;justify-content:space-between;
   padding:1.3rem clamp(1.2rem,4vw,3.2rem);
 }
-.logo{display:flex;align-items:center;gap:.7rem;text-decoration:none}
-.logo svg{width:42px;height:42px;flex:none}
+.logo{display:flex;text-decoration:none}
+.logo .wordline{display:flex;align-items:center;gap:.55rem}
+.logo svg{width:1.9rem;height:1.9rem;flex:none}
 .logo b{
-  font-family:var(--display);font-weight:600;font-size:1.3rem;color:#fff;line-height:1.1;
+  font-family:var(--display);font-weight:600;font-size:1.9rem;color:#fff;line-height:1.1;
   text-shadow:0 1px 8px rgba(0,0,0,.45);
 }
-.logo b small{display:block;font-family:var(--body);font-weight:600;font-size:.68rem;letter-spacing:.24em;text-transform:uppercase;color:#ffd98c}
+.logo .l2{display:block;font-family:var(--body);font-weight:600;font-size:.8rem;letter-spacing:.26em;text-transform:uppercase;color:#ffd98c;margin:3px 0 0 2.45rem}
 nav{display:flex;align-items:center}
 nav a{
   color:#fff;text-decoration:none;font-weight:600;font-size:.95rem;margin-left:1.5rem;
@@ -203,23 +204,29 @@ footer a:first-child{margin-left:0}
 .contact-card .cf-note{font-size:.8rem;color:var(--muted);margin:10px 0 0;text-align:center}
 .contact-card .cf-note a{color:var(--sun-deep);font-weight:600}
 .lockup{display:flex;flex-direction:column}
-.kind-tag{font-family:'Caveat',cursive;font-size:1.05rem;font-weight:600;letter-spacing:.02em;color:#ffd98c;text-shadow:0 1px 6px rgba(0,0,0,.5);margin-top:1px}
+.kind-tag{font-family:'Caveat',cursive;font-size:1.4rem;font-weight:600;letter-spacing:.02em;color:#ffd98c;text-shadow:0 1px 6px rgba(0,0,0,.5);margin:2px 0 0 2.45rem}
 </style>
 </head>
 <body>
 
 <header>
   <a class="logo" href="index.html" aria-label="BringMeSunshineGroup.com home">
-    <svg viewBox="0 0 48 48" aria-hidden="true">
-      <circle cx="24" cy="24" r="11" fill="#f4a836"/>
-      <g stroke="#f4a836" stroke-width="3" stroke-linecap="round">
-        <line x1="24" y1="3" x2="24" y2="9"/><line x1="24" y1="39" x2="24" y2="45"/>
-        <line x1="3" y1="24" x2="9" y2="24"/><line x1="39" y1="24" x2="45" y2="24"/>
-        <line x1="9" y1="9" x2="13.5" y2="13.5"/><line x1="34.5" y1="34.5" x2="39" y2="39"/>
-        <line x1="39" y1="9" x2="34.5" y2="13.5"/><line x1="9" y1="39" x2="13.5" y2="34.5"/>
-      </g>
-    </svg>
-    <span class="lockup"><b>BringMeSunshine<small>Group.com</small></b><span id="kindTag" class="kind-tag">always be kind</span></span>
+    <span class="lockup">
+      <span class="wordline">
+        <svg viewBox="0 0 48 48" aria-hidden="true">
+          <circle cx="24" cy="24" r="11" fill="#f4a836"/>
+          <g stroke="#f4a836" stroke-width="3" stroke-linecap="round">
+            <line x1="24" y1="3" x2="24" y2="9"/><line x1="24" y1="39" x2="24" y2="45"/>
+            <line x1="3" y1="24" x2="9" y2="24"/><line x1="39" y1="24" x2="45" y2="24"/>
+            <line x1="9" y1="9" x2="13.5" y2="13.5"/><line x1="34.5" y1="34.5" x2="39" y2="39"/>
+            <line x1="39" y1="9" x2="34.5" y2="13.5"/><line x1="9" y1="39" x2="13.5" y2="34.5"/>
+          </g>
+        </svg>
+        <b>BringMeSunshine</b>
+      </span>
+      <small class="l2">Group.com</small>
+      <span id="kindTag" class="kind-tag">always be kind</span>
+    </span>
   </a>
   <nav aria-label="Primary">
     <a href="#mission">Our mission</a>
