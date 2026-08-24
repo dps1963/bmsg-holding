@@ -127,8 +127,8 @@ footer{color:#3c4239;background:rgba(253,248,239,.82);border-radius:12px;padding
 <footer>© 2026 BringMeSunshineGroup.com · <a href="index.html">home</a> · <a href="privacy.html">privacy</a> · <a href="terms.html">terms</a></footer>
 <script>
 // Stripe Payment Links land here the day they exist (Dave pastes the buy.stripe.com URLs; buttons go live).
-var STRIPE_LINK_ONCE = "https://buy.stripe.com/7sY4gsgf16is4uFget9fW00"; // live 21 Aug 2026
-var STRIPE_LINK_MONTHLY = "https://buy.stripe.com/8x25kw2obfT2gdn4vL9fW01"; // live 21 Aug 2026
+var STRIPE_LINK_ONCE = "https://buy.stripe.com/7sY4gsgf16is4uFget9fW00?client_reference_id=bmsg"; // live 21 Aug 2026
+var STRIPE_LINK_MONTHLY = "https://buy.stripe.com/8x25kw2obfT2gdn4vL9fW01?client_reference_id=bmsg"; // live 21 Aug 2026
 (function(){
   function arm(id, url){ var a=document.getElementById(id); if(a && url){ a.href=url; a.removeAttribute("aria-disabled"); } }
   arm("giveOnce", STRIPE_LINK_ONCE); arm("giveMonthly", STRIPE_LINK_MONTHLY);
