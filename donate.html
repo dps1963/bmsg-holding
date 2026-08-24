@@ -145,5 +145,8 @@ var STRIPE_LINK_MONTHLY = "https://buy.stripe.com/8x25kw2obfT2gdn4vL9fW01?client
   el.textContent=m.t; el.setAttribute("lang",m.l); el.setAttribute("dir",m.r?"rtl":"ltr");
 })();
 </script>
-</body>
+<script>/* gift-attribution: carry the referring site into Stripe */
+(function(){var ok={bmsg:1,ogd:1,ofr:1,ltr:1};var f=new URLSearchParams(location.search).get("from");
+if(!f||!ok[f])return;document.querySelectorAll('a[href*="buy.stripe.com"]').forEach(function(a){
+var u=new URL(a.href);u.searchParams.set("client_reference_id",f);a.href=u.toString();});})();</script></body>
 </html>
