@@ -1,0 +1,52 @@
+{
+  "contractVersion": "1.0.0",
+  "release": "2026-09-15.1",
+  "status": "adopted",
+  "effectiveFrom": "2026-09-15T08:09:44Z",
+  "approval": {
+    "by": "owner",
+    "recordedAt": "2026-09-15T08:09:44Z",
+    "instruction": "Accepted the legal pair with postal address; selected option 3: publish to production now, with outstanding items documented.",
+    "scope": "Central legal documents and independent public holding-site copies; no service, banking or payment activation."
+  },
+  "canonicalBase": "https://bringmesunshinegroup.com",
+  "documents": {
+    "privacy": {
+      "id": "bmsg-privacy",
+      "sha256": "c70d92add042b759ac742ab218c24ba0b70b19643dfb7726e9b6e42a7d4ceecc"
+    },
+    "terms": {
+      "id": "bmsg-terms",
+      "sha256": "55a701a3eae12aa15b37ebb18494fec4899ccaeb749ca0b48f89eccd5d2b5b06"
+    }
+  },
+  "assetIds": [
+    "bmsg-holding"
+  ],
+  "assetSchedules": {
+    "bmsg-holding": [
+      "WEB",
+      "GIVE"
+    ]
+  },
+  "locales": [
+    "en"
+  ],
+  "pages": [
+    {
+      "path": "privacy.html",
+      "kind": "privacy",
+      "sha256": "8cfbdf4724c44050004ddd56d852d138a7f251f94e704fbe34cafb36e3a1c48e"
+    },
+    {
+      "path": "terms.html",
+      "kind": "terms",
+      "sha256": "8bd644aa6adcd7cf64a6f925749fa384503c5b25cc897accab77d7ec058ed0ec"
+    }
+  ],
+  "linkSurfaces": [
+    "faq.html",
+    "index.html",
+    "donate.html"
+  ]
+}
