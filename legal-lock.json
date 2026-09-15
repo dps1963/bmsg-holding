@@ -36,17 +36,18 @@
     {
       "path": "privacy.html",
       "kind": "privacy",
-      "sha256": "8cfbdf4724c44050004ddd56d852d138a7f251f94e704fbe34cafb36e3a1c48e"
+      "sha256": "9c3d1d497504eebf3cf36c30e274b9164521e2cf43271de8e4328a7851f06559"
     },
     {
       "path": "terms.html",
       "kind": "terms",
-      "sha256": "8bd644aa6adcd7cf64a6f925749fa384503c5b25cc897accab77d7ec058ed0ec"
+      "sha256": "857b60179710cbcd84ab2959a4d70980be1b0cf13394d27bb6ef5d7895bacdff"
     }
   ],
   "linkSurfaces": [
     "faq.html",
     "index.html",
     "donate.html"
-  ]
+  ],
+  "brandWrapperVersion": "1.2.0"
 }

@@ -1,0 +1,16 @@
+/* BMSG web lockup 1.2: compact, proportional, no font request required to paint. */
+.logo{position:relative;display:flex;flex-direction:column;align-items:flex-start;flex:0 0 auto;width:300px;max-width:100%;text-decoration:none;background:transparent;gap:0}
+.logo .bmsg-web-logo,.bmsg-brand .bmsg-web-logo,.bmsg-lockup .bmsg-web-logo{display:block;width:100%;height:auto;max-width:100%;flex:none}
+.logo .beta{font-size:10px;margin:0 0 0 11%;color:inherit}
+.logo .bmsg-localized{position:absolute;top:57%;left:11%;max-width:89%;margin:0!important;font-family:'Caveat',cursive;font-weight:600;font-size:20px!important;line-height:1.2;color:#a6530d}
+.logo .bmsg-localized[hidden]{display:none!important}
+.logo[data-localized=true] [data-part=motto]{visibility:hidden}
+.bmsg-brand{padding:6px 16px;min-height:0;background:transparent}
+.bmsg-brand .bmsg-web-logo{width:300px;max-width:100%;height:auto}
+.bmsg-lockup{width:300px;max-width:100%}
+@media(max-width:640px){.logo{width:min(300px,calc(100vw - 104px))}.logo .bmsg-localized{font-size:18px!important}.bmsg-brand .bmsg-web-logo{width:280px}}
+
+.logo{color:#1c2a44}
+footer>span{min-width:0;display:flex;flex-wrap:wrap;gap:.45rem 1rem}footer>span>a{margin-left:0!important;overflow-wrap:anywhere}
+
+.bmsg-logo-auto{margin-bottom:1rem}@media(prefers-color-scheme:dark){.bmsg-logo-auto [data-part=name]{fill:#fdf8ef}.bmsg-logo-auto [data-part=suffix],.bmsg-logo-auto [data-part=motto]{fill:#ffd98c}}

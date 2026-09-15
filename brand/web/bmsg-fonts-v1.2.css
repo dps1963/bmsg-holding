@@ -1,0 +1,6 @@
+/* BMSG 1.2: local, cacheable, font-display:swap. Logo outlines never wait for fonts. */
+@font-face{font-family:'Albert Sans';src:url('bmsg-albert-v1.2.woff2') format('woff2');font-style:normal;font-weight:100 900;font-display:swap}
+@font-face{font-family:'Fraunces';src:url('bmsg-fraunces-v1.2.woff2') format('woff2');font-style:normal;font-weight:600;font-display:swap}
+@font-face{font-family:'Fraunces';src:url('bmsg-fraunces-regular-v1.2.woff2') format('woff2');font-style:normal;font-weight:400;font-display:swap}
+@font-face{font-family:'Caveat';src:url('bmsg-caveat-v1.2.woff2') format('woff2');font-style:normal;font-weight:600;font-display:swap}
+body,button,input,select,textarea{font-family:'Albert Sans',sans-serif}h1,h2,h3{font-family:'Fraunces',serif}
