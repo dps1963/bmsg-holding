@@ -1,0 +1,10 @@
+{
+  "linkSurfaces": [
+    "faq.html",
+    "index.html",
+    "donate.html"
+  ],
+  "excludedFragments": {
+    "icons/HEAD-SNIPPET.html": "head metadata snippet; not a rendered user-facing body"
+  }
+}
