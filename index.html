@@ -241,6 +241,7 @@ footer a:first-child{margin-left:0}
 </style>
 <link rel="stylesheet" href="brand/web/bmsg-fonts-v1.2.css">
 <link rel="stylesheet" href="brand/web/bmsg-lockup-v1.2.css">
+<link rel="canonical" href="https://bringmesunshinegroup.com/">
 </head>
 <body>
 
@@ -391,19 +392,7 @@ footer a:first-child{margin-left:0}
   <div class="inner">
     <h2>Be part of the sunshine.</h2>
     <p>Whether you want to log a good deed, bring your family closer, or open the world of reading to someone you love — there's a place for you here.</p>
-    <form id="contactForm" class="contact-card" novalidate>
-      <div class="cf-row">
-        <label>Your name<input type="text" id="cfName" name="name" autocomplete="name" required placeholder="Jane Doe"></label>
-        <label>Email<input type="email" id="cfEmail" name="email" autocomplete="email" required placeholder="you@example.com"></label>
-      </div>
-      <div class="cf-row">
-        <label>Phone <span class="cf-opt">(optional)</span><input type="tel" id="cfPhone" name="phone" autocomplete="tel" placeholder="+64 …"></label>
-      </div>
-      <label>Your message<textarea id="cfMsg" name="message" rows="4" required placeholder="Tell us what's on your mind…"></textarea></label>
-      <button type="submit" class="btn btn-sun">Send message</button>
-      <p class="cf-note">Sending opens your email app with everything filled in — or write to us directly at
-      <a href="mailto:info@BringMeSunshineGroup.com">info@BringMeSunshineGroup.com</a>.</p>
-    </form>
+    <p><a class="btn" href="contact.html">Contact us or leave feedback</a></p>
   </div>
 </section>
 
@@ -422,24 +411,7 @@ document.querySelectorAll('img[data-srcs]').forEach(function(img){
 });
 </script>
 
-<script>
-(function(){
-  var f=document.getElementById('contactForm'); if(!f) return;
-  f.addEventListener('submit',function(e){
-    e.preventDefault();
-    if(!f.reportValidity()) return;
-    var name=document.getElementById('cfName').value.trim(),
-        email=document.getElementById('cfEmail').value.trim(),
-        phone=document.getElementById('cfPhone').value.trim(),
-        msg=document.getElementById('cfMsg').value.trim();
-    var body='Name: '+name+'\nEmail: '+email+(phone?'\nPhone: '+phone:'')+'\n\n'+msg;
-    location.href='mailto:info@BringMeSunshineGroup.com?subject='+
-      encodeURIComponent('Get in touch — '+name)+'&body='+encodeURIComponent(body);
-    var b=f.querySelector('button'); b.textContent='Opening your email app…';
-    setTimeout(function(){b.textContent='Send message';},4000);
-  });
-})();
-</script>
+
 
 <script>
 (function(){
