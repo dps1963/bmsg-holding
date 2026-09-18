@@ -35,4 +35,13 @@ a.contact-link{background:#f9a82d;color:#172333!important;border-radius:999px;pa
 .bmsg.contact-view [data-contact-form] button{background:#f9a82d;color:#172333}
 
 /* Keep the existing header backdrop; match the contact content base to the footer. */
-.bmsg.contact-view .contact-page{background:#182233}
+.bmsg.contact-view .contact-page{background:transparent}
+
+/* Keep the photo visible and the footer close to the contact card. */
+.bmsg.contact-view .banner{padding-bottom:1rem}
+.bmsg.contact-view [data-contact-form]{margin-bottom:0}
+.bmsg.contact-view footer{padding-top:1rem;padding-bottom:1rem}
+.bmsg.contact-view [data-contact-form] button[type=submit]{margin-top:.8rem}
+.bmsg.contact-view [data-contact-form] [role=status]{min-height:0}
+.bmsg.contact-view [data-challenge]:empty{margin:0}
+.bmsg.contact-view [data-contact-form] .contact-note{font-size:.8rem;line-height:1.5}
