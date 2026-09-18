@@ -36,12 +36,12 @@
     {
       "path": "privacy.html",
       "kind": "privacy",
-      "sha256": "b94db64959df8daf1c8c7ce601c0997be0c259e1a7c6ad3db386231b5f993088"
+      "sha256": "9c37d77d246877311c8fb0e80bafe3aa8e9a85cb1479662529f2d7328b563cd1"
     },
     {
       "path": "terms.html",
       "kind": "terms",
-      "sha256": "a73b89dbbeca66ba371f719773220ebc4926f40c9b13339f13a90dd0d716c769"
+      "sha256": "91f675b9491989086c0e931d64bff3da413d735e1e523a3cc3005cf1ced70277"
     }
   ],
   "linkSurfaces": [
