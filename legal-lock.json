@@ -1,23 +1,23 @@
 {
   "contractVersion": "1.0.0",
-  "release": "2026-09-15.1",
+  "release": "2026-09-18.1",
   "status": "adopted",
-  "effectiveFrom": "2026-09-15T08:09:44Z",
+  "effectiveFrom": "2026-09-18T01:56:36Z",
   "approval": {
     "by": "owner",
-    "recordedAt": "2026-09-15T08:09:44Z",
-    "instruction": "Accepted the legal pair with postal address; selected option 3: publish to production now, with outstanding items documented.",
-    "scope": "Central legal documents and independent public holding-site copies; no service, banking or payment activation."
+    "recordedAt": "2026-09-18T01:56:36Z",
+    "instruction": "Move the contact-message notice into main BMSG Terms and Privacy pages, link the contact form, and remove the separate BMSG staging contact-privacy page.",
+    "scope": "Consolidation of existing contact disclosures and receipt/screening explanation; staging deployment in this task. Production rollout remains separate."
   },
   "canonicalBase": "https://bringmesunshinegroup.com",
   "documents": {
     "privacy": {
       "id": "bmsg-privacy",
-      "sha256": "c70d92add042b759ac742ab218c24ba0b70b19643dfb7726e9b6e42a7d4ceecc"
+      "sha256": "70f4d0ae6fc82835b2aea6f146e29d07efe091da2a75b39adc417cd94f8b3da9"
     },
     "terms": {
       "id": "bmsg-terms",
-      "sha256": "55a701a3eae12aa15b37ebb18494fec4899ccaeb749ca0b48f89eccd5d2b5b06"
+      "sha256": "c950cff7cd965237ebad83a583b7a84717bf6d16bb639c9ebb974720a40c56d0"
     }
   },
   "assetIds": [
@@ -36,18 +36,18 @@
     {
       "path": "privacy.html",
       "kind": "privacy",
-      "sha256": "9c3d1d497504eebf3cf36c30e274b9164521e2cf43271de8e4328a7851f06559"
+      "sha256": "b94db64959df8daf1c8c7ce601c0997be0c259e1a7c6ad3db386231b5f993088"
     },
     {
       "path": "terms.html",
       "kind": "terms",
-      "sha256": "857b60179710cbcd84ab2959a4d70980be1b0cf13394d27bb6ef5d7895bacdff"
+      "sha256": "a73b89dbbeca66ba371f719773220ebc4926f40c9b13339f13a90dd0d716c769"
     }
   ],
   "linkSurfaces": [
     "faq.html",
     "index.html",
-    "donate.html"
-  ],
-  "brandWrapperVersion": "1.2.0"
+    "donate.html",
+    "contact.html"
+  ]
 }

@@ -2,9 +2,11 @@
   "linkSurfaces": [
     "faq.html",
     "index.html",
-    "donate.html"
+    "donate.html",
+    "contact.html"
   ],
   "excludedFragments": {
     "icons/HEAD-SNIPPET.html": "head metadata snippet; not a rendered user-facing body"
-  }
+  },
+  "preserveWrapper": true
 }
