@@ -49,3 +49,6 @@ a.contact-link{background:#f9a82d;color:#172333!important;border-radius:999px;pa
 /* Legal text begins directly below the existing header. */
 .bmsg.site-subpage .legal-page{margin-top:0!important;padding-top:0}
 .bmsg.site-subpage .legal-page>:first-child{margin-top:0}
+
+/* Show the full photo width, anchored on the people at the bottom. */
+.bmsg.contact-view .contact-page{background-color:#182233;background-image:linear-gradient(rgba(16,24,40,.68),rgba(16,24,40,.68)),url('images/connect.jpg');background-size:100% 100%,100% auto;background-position:center bottom;background-repeat:no-repeat}
