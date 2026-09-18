@@ -52,3 +52,10 @@ a.contact-link{background:#f9a82d;color:#172333!important;border-radius:999px;pa
 
 /* Show the full photo width, anchored on the people at the bottom. */
 .bmsg.contact-view .contact-page{background-color:#182233;background-image:linear-gradient(rgba(16,24,40,.68),rgba(16,24,40,.68)),url('images/connect.jpg');background-size:100% 100%,100% auto;background-position:center bottom;background-repeat:no-repeat}
+
+/* Cream introduction blends into the full-width bottom-aligned photo. */
+.bmsg.contact-view .contact-page{background-color:#fdf8ef;background-image:linear-gradient(to bottom,#fdf8ef 0%,rgba(253,248,239,.96) 20%,rgba(253,248,239,.25) 55%,rgba(16,24,40,.45) 100%),url('images/connect.jpg')}
+.bmsg.contact-view .banner>.inner>h2,.bmsg.contact-view .banner>.inner>p{color:#1c2a44;text-shadow:none}
+.bmsg.contact-view [data-contact-form]{padding-top:12px;padding-bottom:12px}
+.bmsg.contact-view [data-contact-form]>label:first-of-type{margin-top:0}
+.bmsg.contact-view [data-contact-form]>[role=status]{margin-bottom:0!important}
