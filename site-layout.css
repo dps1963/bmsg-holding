@@ -33,3 +33,6 @@ a.contact-link{background:#f9a82d;color:#172333!important;border-radius:999px;pa
 .bmsg.contact-view .banner-img,.bmsg.contact-view .banner-scrim{display:none}
 .bmsg.contact-view [data-contact-form]{background:#fdf8ef;color:#232a26}
 .bmsg.contact-view [data-contact-form] button{background:#f9a82d;color:#172333}
+
+/* Keep the existing header backdrop; match the contact content base to the footer. */
+.bmsg.contact-view .contact-page{background:#182233}
