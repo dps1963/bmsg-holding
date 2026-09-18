@@ -45,3 +45,7 @@ a.contact-link{background:#f9a82d;color:#172333!important;border-radius:999px;pa
 .bmsg.contact-view [data-contact-form] [role=status]{min-height:0}
 .bmsg.contact-view [data-challenge]:empty{margin:0}
 .bmsg.contact-view [data-contact-form] .contact-note{font-size:.8rem;line-height:1.5}
+
+/* Legal text begins directly below the existing header. */
+.bmsg.site-subpage .legal-page{margin-top:0!important;padding-top:0}
+.bmsg.site-subpage .legal-page>:first-child{margin-top:0}
