@@ -11,3 +11,11 @@ for source in root.rglob('*'):
  if any(part.startswith('.') or part in {'public','hosting','node_modules'} for part in relative.parts):continue
  if source.is_file() and source.suffix.lower() in allowed:
   target=out/relative;target.parent.mkdir(parents=True,exist_ok=True);shutil.copyfile(source,target)
+# Stripe prohibited-category guard (Dave, 1 Nov 2026: donation soliciting is prohibited for the BMSG Stripe account).
+# Fail closed: no public image can carry a payment link or the old "Support the sunshine" page again.
+forbidden=('buy.stripe.com','donate.stripe.com','checkout.stripe.com','donate.html?from=','Support the sunshine','Monthly sunshine')
+for built in sorted(out.rglob('*')):
+ if built.is_file() and built.suffix.lower() in {'.html','.js','.css','.json','.xml','.txt','.svg','.webmanifest'}:
+  text=built.read_text(encoding='utf-8',errors='replace').lower()
+  hits=[f for f in forbidden if f.lower() in text]
+  if hits:shutil.rmtree(out);raise SystemExit('donation solicitation is not allowed on the public site: '+str(built.relative_to(out))+' contains '+', '.join(hits))
