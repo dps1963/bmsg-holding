@@ -15,7 +15,7 @@ for source in root.rglob('*'):
 # Fail closed: no public image can carry a payment link or the old "Support the sunshine" page again.
 forbidden=('buy.stripe.com','donate.stripe.com','checkout.stripe.com','donate.html?from=','Support the sunshine','Monthly sunshine')
 for built in sorted(out.rglob('*')):
- if built.is_file() and built.suffix.lower() in {'.html','.js','.css','.json','.xml','.txt','.webmanifest'}:
+ if built.is_file() and built.suffix.lower() in {'.html','.js','.css','.json','.xml','.txt','.svg','.webmanifest'}:
   text=built.read_text(encoding='utf-8',errors='replace').lower()
   hits=[f for f in forbidden if f.lower() in text]
-  if hits:raise SystemExit('donation solicitation is not allowed on the public site: '+str(built.relative_to(out))+' contains '+', '.join(hits))
+  if hits:shutil.rmtree(out);raise SystemExit('donation solicitation is not allowed on the public site: '+str(built.relative_to(out))+' contains '+', '.join(hits))
